@@ -1,0 +1,55 @@
+name: banking_legacy_app
+description: Secure Banking Digital Legacy Management System
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.0 <4.0.0"
+  flutter: ">=3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # ── EXISTING ──────────────────────────────────────
+  sqflite: ^2.3.0
+  path: ^1.8.3
+  encrypt: ^5.0.1
+  crypto: ^3.0.3
+  provider: ^6.0.5
+  intl: ^0.18.0
+
+  # ── FIREBASE ──────────────────────────────────────
+  firebase_core: ^3.6.0
+  cloud_firestore: ^5.4.4
+  firebase_auth: ^5.3.1
+  firebase_storage: ^12.3.2
+
+  # ── EMAIL ─────────────────────────────────────────
+  emailjs: ^4.0.0
+  http: ^1.1.0
+
+  # ── FILE PICKER ───────────────────────────────────
+  image_picker: ^1.0.4
+  flutter_image_compress: ^2.1.0
+
+dev_dependencies:
+  flutter_lints: ^2.0.0
+  flutter_launcher_icons: ^0.13.1
+  flutter_native_splash: ^2.3.6
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/logo_splash.png
+
+# ---------- APP ICON ----------
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: assets/logo_splash.png
+
+# ---------- SPLASH SCREEN ----------
+flutter_native_splash:
+  color: "#FFFFFF"
+  image: assets/logo_splash.png
